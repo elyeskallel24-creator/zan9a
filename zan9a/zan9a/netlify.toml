@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Make React Router work on Netlify (single page app)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
